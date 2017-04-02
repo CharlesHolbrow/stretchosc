@@ -1,4 +1,4 @@
-package oscstretch
+package stretchosc
 
 import (
 	"fmt"

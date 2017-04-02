@@ -1,4 +1,4 @@
-package oscstretch
+package stretchosc
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 func Test_main(t *testing.T) {
 
 	fmt.Println("OK")
-	tsc := MakeTimeStretchControl("localhost", 12340)
+	tsc := MakeTimeStretchControl("studiomac.media.mit.edu", 12340)
 	tsc.Activate(3)
 	tsc.StretchAmount(3, 20)
 	time.Sleep(time.Second * 5)
